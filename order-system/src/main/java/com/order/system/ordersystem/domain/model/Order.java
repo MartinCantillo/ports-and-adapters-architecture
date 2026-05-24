@@ -7,12 +7,10 @@ public class Order {
     private Double total;
     private OrderStatus status;
 
-    public Order(long id, String customerName, Double total, OrderStatus status) {
-        this.id = id;
+    public Order(String customerName, Double total) {
         this.customerName = customerName;
         this.total = total;
-        this.status = status;
-
+        this.status = OrderStatus.CREATED;
     }
     public void assignId(Long id) {
         this.id = id;
