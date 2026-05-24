@@ -5,33 +5,20 @@ public class Order {
     private long id;
     private String customerName;
     private Double total;
-    private OrderStatus orderStatus;
+    private OrderStatus status;
 
-    public Order(long id, String customerName, Double total, OrderStatus orderStatus) {
+    public Order(long id, String customerName, Double total, OrderStatus status) {
         this.id = id;
         this.customerName = customerName;
         this.total = total;
-        this.orderStatus = orderStatus;
+        this.status = status;
 
     }
-
-    public void setId(long id) {
+    public void assignId(Long id) {
         this.id = id;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
-    }
-
-    public void setOrderStatus(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -43,7 +30,7 @@ public class Order {
         return total;
     }
 
-    public OrderStatus getOrderStatus() {
-        return orderStatus;
+    public OrderStatus getStatus() {
+        return status;
     }
 }
