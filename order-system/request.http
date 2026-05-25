@@ -1,0 +1,10 @@
+@host = http://localhost:8080
+@baseUrl = {{host}}/orders
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "customerName": "Martin",
+  "total": 150000
+}
